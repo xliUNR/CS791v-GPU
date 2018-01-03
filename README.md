@@ -1,4 +1,4 @@
-# PA0: Triangle
+# PA0: Add Two Array
 
 # Dependencies, Building, and Running
 
