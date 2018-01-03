@@ -1,5 +1,5 @@
 
-#include "../include/add.h"
+#include "add.h"
 
 /*
   This is the function that each thread will execute on the GPU. The
