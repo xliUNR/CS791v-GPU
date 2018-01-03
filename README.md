@@ -1,0 +1,44 @@
+# PA0: Triangle
+
+# Dependencies, Building, and Running
+
+## Dependency Instructions
+PA0 requires CUDA toolkit and the latest version is 9.1. Details about the CUDA introduction and dependencies are available at [CUDA 9.1](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html). You can download the CUDA 9.1 toolkit at [CUDA 9.1 download](https://developer.nvidia.com/cuda-downloads). 
+
+After the installation, you need to follow these commands to setup envriontmental parameters:
+```Environmental Parameters Setup
+export CUDA_HOME=/usr/local/cuda-9.1
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64 
+PATH=${CUDA_HOME}/bin:${PATH}
+export PATH
+```
+You may need to repeat the "Environmental Parameters Setup" every time when you open a new terminal. Because you bashrc does not have PATH parameter. If this happens, try the following command:
+```
+echo "export PATH=/usr/local/cuda-9.1/bin:$PATH" >> ~/.bashrc
+```
+
+
+Please follow the instructions and install the toolkit and test it by executing PA0.
+
+## Building and Running
+To build this project there are two options. One is to use CMake which makes including new libraries easier, and handles new files added automatically to the src and include directory. CMake is a small new learning curve but makes things easier in the future.
+The second option is to use the provided Makefile which is used as usual.
+
+Running the make in a separate directory will allow easy cleanup of the build data, and an easy way to prevent unnecessary data to be added to the git repository.  
+
+### Makefile Instructions 
+The makefile works as expected and must be updated with new files added in.
+
+```bash
+mkdir build
+cd build
+cp ../makefile .
+make
+./Tutorial
+```
+
+## Ubuntu.cse.unr.edu
+OpenGL 3.3 will run on the [ubuntu.cse.unr.edu](https://ubuntu.cse.unr.edu/) website. To do so follow the build instructions, but when running the Tutorial executable use this line to execute.
+```bash
+/usr/NX/scripts/vgl/vglrun ./Tutorial
+```
