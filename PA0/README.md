@@ -1,4 +1,4 @@
-# PA0: Add Two Array
+# PA0: Add Two Arrays
 
 # Dependencies, Building, and Running
 
