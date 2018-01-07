@@ -1,42 +1,13 @@
-# PA0: Add Two Array
+# Example GPU Programs
+## This is for use at the University of Nevada, Reno CS 791v GPU Class
+This is part of the first assignment in the class and necessary for turning in assignments throughout the semester.
 
-# Dependencies, Building, and Running
+# Projects
 
-## Dependency Instructions
-PA0 requires CUDA toolkit and the latest version is 9.1. Details about the CUDA introduction and dependencies are available at [CUDA 9.1](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html). You can download the CUDA 9.1 toolkit at [CUDA 9.1 download](https://developer.nvidia.com/cuda-downloads). 
+## PA0: Add Two Arrays
+This is a simple program to add two arrays by using GPU. To run this project ```cd PA0``` then follow the instructions in the README.md.
 
-After the installation, you need to follow these commands to setup envriontmental parameters:
-```Environmental Parameters Setup
-export CUDA_HOME=/usr/local/cuda-9.1
-export LD_LIBRARY_PATH=${CUDA_HOME}/lib64 
-PATH=${CUDA_HOME}/bin:${PATH}
-export PATH
-```
-You may need to repeat the "Environmental Parameters Setup" every time when you open a new terminal. Because you bashrc does not have PATH parameter. If this happens, try the following command:
-```
-echo "export PATH=/usr/local/cuda-9.1/bin:$PATH" >> ~/.bashrc
-```
+## PA1: Spinning Cube
+This should be an improved version of PA0. You need to follow the ideas from PA0 and what is learned from this course to finish this assignment.
 
 
-Please follow the instructions and install the toolkit and test it by executing PA0.
-
-## Building and Running
-To build this project, you need to use the provided Makefile which is used as usual.
-
-Running the make in a separate directory will allow easy cleanup of the build data, and an easy way to prevent unnecessary data to be added to the git repository.  
-
-### Makefile Instructions 
-The makefile works as expected and must be updated with new files added in.
-
-```bash
-mkdir build
-cd build
-cp ../makefile .
-make
-./PA0
-```
-
-If you want to clean the build folder, then execute the following command:
-```
-make clean
-```
