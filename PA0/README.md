@@ -81,7 +81,7 @@ mkdir build
 cd build
 cp ../makefile .
 make
-srun nvcc ./PA0
+srun ./PA0
 ```
 
 If you execute any GPU program in Cubix, you need to use [slurm](https://slurm.schedmd.com/quickstart.html). Slurm is a workload manager and manages all the execution requests in queues.
