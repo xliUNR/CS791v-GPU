@@ -81,7 +81,7 @@ mkdir build
 cd build
 cp ../makefile .
 make
-srun ./PA0
+srun --gres=gpu:1 ./PA0
 ```
 
-If you execute any GPU program in Cubix, you need to use [slurm](https://slurm.schedmd.com/quickstart.html). Slurm is a workload manager and manages all the execution requests in queues.
+If you execute any GPU program in Cubix, you need to use [slurm](https://slurm.schedmd.com/quickstart.html). Slurm is a workload manager and manages all the execution requests in queues. ```--gres=gpu:1``` means one GPU is used to execute the program.
