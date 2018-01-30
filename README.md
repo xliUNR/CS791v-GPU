@@ -11,3 +11,4 @@ This is a simple program to add two arrays by using GPU. To run this project ```
 This should be an improved version of PA0. You need to follow the ideas from PA0 and what is learned from this course to finish this assignment.
 
 
+# CS791projects
